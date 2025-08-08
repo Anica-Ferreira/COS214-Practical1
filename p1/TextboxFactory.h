@@ -5,9 +5,6 @@
 
 class TextboxFactory {
     public:
-        TextboxFactory();
-        ~TextboxFactory();
-
         Shape* createShape();
         void toString();
 };

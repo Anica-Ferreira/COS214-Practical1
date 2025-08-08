@@ -1,44 +1,18 @@
 #include <iostream>
+#include <string>
 #include "Shape.h" 
 
 using namespace std;
 
-int Shape :: getLength() {
-    return this->length;
-}
+Shape :: Shape() : length(0), width(0), colour(""), position_x(0), position_y(0) {}
 
-int Shape :: getWidth() {
-    return this->width;
-}
+Shape :: Shape(int _length, int _width, const std::string& _colour, int pos_x, int pos_y) 
+                : length(_length), width(_width), colour(_colour), position_x(pos_x), position_y(pos_y) {}
 
-std::string Shape :: getColour() {
-    return this->colour;
-}
-
-int Shape :: getPosition_X() {
-    return this->position_x;
-}
-
-int Shape :: getPosition_Y() {
-    return this->position_y;
-}
-
-int Shape :: setLength(int length_) {
-    this->length = length_;
-}
-
-int Shape :: setWidth(int width_) {
-    this->width = width_;
-}
-
-std::string Shape :: setColour(std::string colour_) {
-    this->colour = colour_;
-}
-
-int Shape :: setPosition_X(int position_x_) {
-    this->position_x = position_x_;
-}
-
-int Shape :: setPosition_Y(int position_y_) {
-    this->position_y = position_y_;
+Shape :: Shape(const Shape& otherShape) {
+    length = otherShape.length;
+    width = otherShape.width;
+    colour = otherShape.colour;
+    position_x = otherShape.position_x;
+    position_y = otherShape.position_y;
 }

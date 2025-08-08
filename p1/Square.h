@@ -1,8 +1,9 @@
 #ifndef SQUARE_H
 #define SQUARE_H
 
-#include "Shape.h"
 #include <string>
+#include "Shape.h"
+
 
 class Square : public Shape {
     // private:
@@ -14,9 +15,11 @@ class Square : public Shape {
 
     public:
         Square();
-        ~Square();
+        Square(int, std::string, int, int);
+        Square(const Square& other);
+        virtual ~Square() {}
 
-        Shape* clone();
+        Shape* clone() override;
 };
 
 

@@ -5,9 +5,6 @@
 
 class RectangleFactory {
     public:
-        RectangleFactory();
-        ~RectangleFactory();
-
         Shape* createShape();
         void toString();
 };

@@ -7,9 +7,13 @@
 class Textbox : public Shape {
     public:
         Textbox();
-        ~Textbox();
+        Textbox(const Textbox& other);
+        virtual ~Textbox() {}
 
-        Shape* clone();
+        void setText(const std::string& _text);
+        std::string getText() const;
+
+        Shape* clone() override;
         
     private:
         // int length;

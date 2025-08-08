@@ -5,8 +5,7 @@
 
 class ShapeFactory {
     public:
-        ShapeFactory();
-        ~ShapeFactory();
+        virtual ~ShapeFactory() {};
         
     protected:
         virtual Shape* createShape() = 0;

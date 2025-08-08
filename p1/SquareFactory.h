@@ -5,9 +5,6 @@
 
 class SquareFactory {
     public:
-        SquareFactory();
-        ~SquareFactory();
-
         Shape* createShape();
         void toString();
 };

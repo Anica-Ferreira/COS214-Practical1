@@ -13,10 +13,11 @@ class Rectangle : public Shape {
     //     int position_y;
 
     public:
-        Rectangle();    // still need to modify
-        ~Rectangle();
+        Rectangle();    
+        Rectangle(const Rectangle& other);
+        virtual ~Rectangle() {}
 
-        Shape* clone();
+        Shape* clone() override;
 };
 
 

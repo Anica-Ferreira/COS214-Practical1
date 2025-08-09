@@ -5,15 +5,9 @@
 #include <string>
 
 class Rectangle : public Shape {
-    // private:
-    //     int length;
-    //     int width;
-    //     std::string colour;
-    //     int position_x;
-    //     int position_y;
-
     public:
-        Rectangle();    
+        Rectangle();
+        Rectangle(int length, int width, const std::string& colour, int position_x, int position_y);    
         Rectangle(const Rectangle& other);
         virtual ~Rectangle() {}
 

@@ -18,8 +18,6 @@ class Shape {
         std::string colour;
         int position_x;
         int position_y;
-
 };
-
 
 #endif

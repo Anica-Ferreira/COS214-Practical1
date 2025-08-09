@@ -5,16 +5,14 @@ using namespace std;
 
 #include "Shape.h"
 
-
 class ShapeFactory {
     public:
         virtual ~ShapeFactory() {};
-        friend class Canvas; //to allow access to createShape
+        Shape* create(int length, int width, const string& colour, int position_x, int position_y); //wrapper function to create shapes
 
     protected:
-        virtual Shape* createShape() = 0;
+        virtual Shape* createShape(int length, int width, const string& colour, int position_x, int position_y) = 0;
         virtual void toString() = 0; 
-    
 };
 
 

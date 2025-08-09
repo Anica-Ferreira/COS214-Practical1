@@ -6,9 +6,8 @@
 
 class RectangleFactory : public ShapeFactory { 
     public:
-        Shape* createShape();
-        void toString();
+        Shape* createShape(int length, int width, const std::string& colour, int position_x, int position_y);
+        void toString() override;
 };
-
 
 #endif

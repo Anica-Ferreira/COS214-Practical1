@@ -7,5 +7,5 @@ Shape* SquareFactory :: createShape() {
 }
 
 void SquareFactory :: toString() {
-    std::cout << "Square added to Canvas!" << std::endl;
+    std::cout << "Square" << std::endl;
 }

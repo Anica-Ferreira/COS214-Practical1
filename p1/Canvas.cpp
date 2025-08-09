@@ -42,7 +42,6 @@ void Canvas :: undoAction(Memento* prev) {
     }
 }
 
-void Canvas :: addShapeFromFactory(ShapeFactory* factory){
-    Shape* newShape = factory->createShape();
-    shapes.push_back(newShape);
+void Canvas::addShape(Shape* shape) {
+    shapes.push_back(shape);
 }

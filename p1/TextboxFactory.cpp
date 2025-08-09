@@ -7,5 +7,5 @@ Shape* TextboxFactory :: createShape() {
 }
 
 void TextboxFactory :: toString() {
-    std::cout << "Textbox added to Canvas!" << std::endl;
+    std::cout << "Textbox" << std::endl;
 }

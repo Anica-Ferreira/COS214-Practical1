@@ -1,7 +1,7 @@
-main: main.o Canvas.o Memento.o Shape.o Rectangle.o RectangleFactory.o Square.o SquareFactory.o Textbox.o TextboxFactory.o ExportCanvas.o PDFExporter.o PNGExporter.o ShapeStore.o
-	g++ -o main main.o Canvas.o Memento.o Shape.o Rectangle.o RectangleFactory.o Square.o SquareFactory.o Textbox.o TextboxFactory.o ExportCanvas.o PDFExporter.o PNGExporter.o ShapeStore.o
+main: main.o Canvas.o Memento.o Shape.o Rectangle.o RectangleFactory.o Square.o SquareFactory.o Textbox.o TextboxFactory.o ExportCanvas.o PDFExporter.o PNGExporter.o ShapeStore.o ShapeFactory.o
+	g++ -o main main.o Canvas.o Memento.o Shape.o Rectangle.o RectangleFactory.o Square.o SquareFactory.o Textbox.o TextboxFactory.o ExportCanvas.o PDFExporter.o PNGExporter.o ShapeStore.o ShapeFactory.o
 
-main.o: main.cpp Canvas.h Memento.h ShapeFactory.h RectangleFactory.h SquareFactory.h TextboxFactory.h ExportCanvas.h PDFExporter.h PNGExporter.h ShapeStore.h
+main.o: main.cpp Canvas.h Memento.h ShapeFactory.h RectangleFactory.h SquareFactory.h TextboxFactory.h ExportCanvas.h PDFExporter.h PNGExporter.h ShapeStore.h ShapeFactory.h
 	g++ -c main.cpp
 
 Canvas.o: Canvas.cpp Canvas.h Memento.h Shape.h ShapeFactory.h

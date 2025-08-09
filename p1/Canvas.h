@@ -15,8 +15,7 @@ class Canvas {
         
         Memento* captureCurrent();
         void undoAction(Memento* prev);
-        void addShapeFromFactory(ShapeFactory* factory);
-        const vector<Shape*>& getShapes() const;
+        void addShape(Shape* shape);
 
     private:
         vector<Shape*> shapes; //unsure about this..

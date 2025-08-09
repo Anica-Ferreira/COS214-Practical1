@@ -3,6 +3,12 @@
 
 using namespace std;
 
+ExportCanvas :: ExportCanvas(Canvas* canvas){
+    this->canvas = canvas;
+}
+
+ExportCanvas :: ~ExportCanvas(){}
+
 void ExportCanvas :: exportToFile(){
     prepareCanvas();
     renderElements();

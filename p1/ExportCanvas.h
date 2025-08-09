@@ -5,19 +5,17 @@
 
 class ExportCanvas {
     public:
-        ExportCanvas();     // still need to modify
-        ~ExportCanvas();
+        ExportCanvas(Canvas* c);
+        virtual ~ExportCanvas();
 
         void exportToFile(); //template method
         
     private:
         Canvas* canvas;
 
-        virtual void prepareCanvas(); //chenged to virtual
+        virtual void prepareCanvas();
         virtual void renderElements();
         virtual void saveToFile() = 0;
-    
 };
-
 
 #endif

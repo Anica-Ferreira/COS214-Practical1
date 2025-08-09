@@ -7,13 +7,12 @@ using namespace std;
 
 class PNGExporter : public ExportCanvas {
     public:
-        // PNGExporter();
-        // ~PNGExporter();
+        PNGExporter(Canvas* canvas);
         
     private:
-        void saveToFile();
-        void prepareCanvas();
-        void renderElements();
+        void saveToFile() override;
+        void prepareCanvas() override;
+        void renderElements() override;
 };
 
 #endif

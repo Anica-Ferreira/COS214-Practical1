@@ -7,8 +7,7 @@ using namespace std;
 
 class PDFExporter : public ExportCanvas {
     public:
-        // PDFExporter();
-        // ~PDFExporter();
+        PDFExporter(Canvas* canvas);
         
     private:
         void saveToFile();

@@ -1,6 +1,8 @@
 #include <iostream>
 #include "PNGExporter.h"
 
+PNGExporter::PNGExporter(Canvas* c) : ExportCanvas(c) {}
+
 void PNGExporter :: prepareCanvas() {
     cout << "Preparing your canvas for PNG export..." << endl;
 }

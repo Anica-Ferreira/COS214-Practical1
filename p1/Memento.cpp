@@ -1,17 +1,19 @@
 #include <iostream>
 #include "Memento.h"
 
-using namespace std;
-
-Memento :: Memento(Shape* elements) {
-
+Memento :: Memento(vector<Shape*>& elements) {
+    for (int i = 0; i < elements.size(); ++i) {
+        shapes.push_back(elements[i]->clone());
+    }
 }
 
-Shape* Memento :: getShapeState() {
-
+Memento :: ~Memento(){
+    for (int i = 0; i < shapes.size(); i++){
+        delete shapes[i];
+    }
+    shapes.clear();
 }
 
-void Memento :: setShapeState() {
-
+vector<Shape*>& Memento :: getShapeState(){
+    return shapes;
 }
-

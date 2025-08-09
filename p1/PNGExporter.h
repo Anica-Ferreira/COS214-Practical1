@@ -3,6 +3,8 @@
 
 #include "ExportCanvas.h"
 
+using namespace std;
+
 class PNGExporter : public ExportCanvas {
     public:
         // PNGExporter();
@@ -10,7 +12,8 @@ class PNGExporter : public ExportCanvas {
         
     private:
         void saveToFile();
-
+        void prepareCanvas();
+        void renderElements();
 };
 
 #endif

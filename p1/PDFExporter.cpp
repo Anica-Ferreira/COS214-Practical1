@@ -1,8 +1,14 @@
 #include <iostream>
 #include "PDFExporter.h"
 
-void PDFExporter :: saveToFile() {
-
+void PDFExporter :: prepareCanvas() {
+    cout << "Preparing your canvas for PDF export..." << endl;
 }
 
-using namespace std;
+void PDFExporter :: renderElements() {
+    cout << "Rendering your PDF..." << endl;
+}
+
+void PDFExporter :: saveToFile() {
+    cout << "Saving your PDF!" << endl;
+}

@@ -2,8 +2,9 @@
 #define TEXTBOXFACTORY_H
 
 #include "Shape.h"
+#include "ShapeFactory.h"
 
-class TextboxFactory {
+class TextboxFactory : public ShapeFactory {
     public:
         Shape* createShape();
         void toString();

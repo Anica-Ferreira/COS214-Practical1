@@ -8,13 +8,13 @@ class ExportCanvas {
         ExportCanvas();     // still need to modify
         ~ExportCanvas();
 
-        void exportToFile();
+        void exportToFile(); //template method
         
     private:
         Canvas* canvas;
 
-        void prepareCanvas();
-        void renderElements();
+        virtual void prepareCanvas(); //chenged to virtual
+        virtual void renderElements();
         virtual void saveToFile() = 0;
     
 };

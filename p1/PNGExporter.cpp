@@ -1,8 +1,14 @@
 #include <iostream>
 #include "PNGExporter.h"
 
-void PNGExporter :: saveToFile() {
-
+void PNGExporter :: prepareCanvas() {
+    cout << "Preparing your canvas for PNG export..." << endl;
 }
 
-using namespace std;
+void PNGExporter :: renderElements() {
+    cout << "Rendering your PNG..." << endl;
+}
+
+void PNGExporter :: saveToFile() {
+    cout << "Saving your PNG!" << endl;
+}
